@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    By Name-->
+<!--    <bean class="Autowiring.Address" name="address">-->
+<!--        <property name="street" value="WarjeBridge"/>-->
+<!--        <property name="city" value="Pune"/>-->
+<!--    </bean>-->
+
+<!--    By Type-->
+<!--    <bean class="Autowiring.Address" name="address11">-->
+<!--        <property name="street" value="WarjeBridge"/>-->
+<!--        <property name="city" value="Pune"/>-->
+<!--    </bean>-->
+
+<!--    By Constructor-->
+    <bean class="Autowiring.Address" name="address22">
+        <property name="street" value="KarveNagar"/>
+        <property name="city" value="Pune"/>
+    </bean>
+
+<!--    <bean class="Autowiring.Employee" name="Empp" autowire="byName"/>-->
+<!--    <bean class="Autowiring.Employee" name="Empp" autowire="byType"/>-->
+    <bean class="Autowiring.Employee" name="Empp" autowire="constructor"/>
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="ConstructorInjection.Society" name="society">
+        <constructor-arg value="Ganraj Society"/>
+
+    </bean>
+
+    <bean class="ConstructorInjection.Resident" name=" resident ">
+
+        <constructor-arg value= " Prafful Roundale "/>
+        <constructor-arg value= " 50 "/>
+        <constructor-arg ref="society"/>
+
+    </bean>
+
+</beans>
